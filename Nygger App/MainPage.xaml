@@ -8,15 +8,39 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="dotnet_bot.png"
+                Source="kostka.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
             <Label
-                Text="Hello, World!"
+                Text="Zarzuć"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
+
+            <StackLayout>
+                <Label Text="Wybierz zarzute" />
+                <RadioButton>
+                    <RadioButton.Content>
+                        <Image Source="kostka.png"  HeightRequest="185" />
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton>
+                    <RadioButton.Content>
+                        <Image Source="niebieski.png" HeightRequest="185" />
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton>
+                    <RadioButton.Content>
+                        <Image Source="czerwony.png" HeightRequest="185"/>
+                    </RadioButton.Content>
+                </RadioButton>
+                <RadioButton>
+                    <RadioButton.Content>
+                        <Image Source="zolty.png" HeightRequest="185"/>
+                    </RadioButton.Content>
+                </RadioButton>
+            </StackLayout>
 
             <Label
                 Text="Welcome to &#10;.NET Multi-platform App UI"
@@ -26,7 +50,7 @@
 
             <Button
                 x:Name="CounterBtn"
-                Text="Click me" 
+                Text="Twoje rzuty" 
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
