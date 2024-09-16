@@ -43,7 +43,7 @@
             </StackLayout>
 
             <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
+                Text="Kliknij aby wylosować"
                 Style="{StaticResource SubHeadline}"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
@@ -54,6 +54,12 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+            <Label
+                x:Name="RollValueLabel"
+                Text="Wynik rzutu"
+                FontSize="Large"
+                HorizontalTextAlignment="Center"
+                />
         </VerticalStackLayout>
     </ScrollView>
 

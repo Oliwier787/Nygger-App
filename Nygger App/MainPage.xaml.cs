@@ -15,7 +15,7 @@
 
             int diceRoll = r.Next(1,  7);
 
-            CounterBtn.Text = "Wylosowany rzut " + diceRoll.ToString();
+            RollValueLabel.Text = "Wylosowany rzut " + diceRoll.ToString();
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
