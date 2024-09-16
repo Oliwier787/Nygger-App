@@ -13,7 +13,7 @@
         {
             Random r = new Random();
 
-            int diceRoll = r.Next(1, 7);
+            int diceRoll = r.Next(1,  7);
 
             CounterBtn.Text = "Wylosowany rzut " + diceRoll.ToString();
 
